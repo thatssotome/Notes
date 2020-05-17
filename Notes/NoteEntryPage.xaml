@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    <!-- The Second page of the application-->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notes.NoteEntryPage"
+             Title="Note Entry">
+    <StackLayout Margin="20">
+        <Editor Placeholder="Entry your note"
+                Text="{Binding Text}"
+                HeightRequest="100"/> <!--data binding of the Text property of the Notes Model-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+    <!--2Buttons: Save and Delete-->
+            <Button Text="Save"
+                    Clicked="OnSaveButtonClicked"/> <!--Event handler for the buttons-->
+            <Button Grid.Column="1"
+                    Text="Delete"
+                    Clicked="OnDeleteButtonClicked"/>
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>
