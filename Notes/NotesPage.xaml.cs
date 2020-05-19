@@ -6,6 +6,7 @@ using Xamarin.Forms;
 using Notes.Models; //still storing data back in the Note class in Model folder 
 
 
+
 namespace Notes
 {
     
@@ -15,24 +16,10 @@ namespace Notes
         {
             InitializeComponent();
         }
-        protected override void OnAppearing() 
+        protected override async void OnAppearing() 
         {
             base.OnAppearing(); //populate a list view of any notes from the local application folder 
-            var notes = new List<Note>();
-
-            var files = Directory.EnumerateFiles(App.FolderPath, "*.notes.txt"); //class system IO directory 
-            foreach (var filename in files) //for each of the filename in the files, read text and get date 
-            {
-                notes.Add(new Note
-                { 
-                    Filename = filename, 
-                    Text = File.ReadAllText(filename),
-                    Date = File.GetCreationTime(filename)
-                });
-            }
-            listView.ItemsSource = notes
-                .OrderBy(d => d.Date)
-                .ToList(); //order by date 
+            listView.ItemsSource = await App.Database.GetNotesAsync(); //populates any notes that is currently in the database 
         }
         async void OnNoteAddedClicked(object sender, EventArgs e)//OnNoteAddedClicked event handler, would navigate to the Note Entry Page
         {
