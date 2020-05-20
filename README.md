@@ -1,5 +1,5 @@
 # MultiPage App Note 
-   ![single](https://github.com/thatssotome/Notes/blob/Multipage/mpp_note_entry.PNG)    ![single](https://github.com/thatssotome/Notes/blob/Multipage/mpp_note.PNG) 
+   ![multiple](https://github.com/thatssotome/Notes/blob/Multipage/mpp_note_entry.PNG)    ![multiple](https://github.com/thatssotome/Notes/blob/Multipage/mpp_note.PNG) 
 * 	Created Multiple pages: NoteEntry Page and a Notes Page 
 * 	Use “async”, to sync and link multiple pages together  and navigation within 
 * 	Adding instances to each other 
