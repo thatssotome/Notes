@@ -1,4 +1,5 @@
 # Database 
+![database](https://github.com/thatssotome/Notes/blob/Database/database.PNG) ![database](https://github.com/thatssotome/Notes/blob/Database/databasenoteentry.PNG)
 * The first installation of SQL Lite package, 
 * Async  OnAppearing method to display the notes instance from the SQLite database on the local app
 * Add, edit, delete and save on to the database
