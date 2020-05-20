@@ -1,5 +1,5 @@
 # SinglePage App Note 
-   ![single](https://github.com/thatssotome/Notes/blob/master/newapp.PNG)    ![single](https://github.com/thatssotome/Notes/blob/master/newapp.PNG) 
+   ![single](https://github.com/thatssotome/Notes/blob/master/newapp.PNG)    ![single](https://github.com/thatssotome/Notes/blob/master/single_entry.PNG) 
 * Add entry to the app 
 * Save Button Save the Notes 
 * Delete Button clears the note 
