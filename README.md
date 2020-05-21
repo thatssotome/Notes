@@ -1,9 +1,10 @@
 # Styling
-
-
 - [x] Function is done 
 - [ ] Work on aesthetics 
 
+* Styling the page: App.xaml, NoteEntryPage.xaml, NotePage.xaml 
+* App.xaml define values, and codes that can be used throughout the app 
+* NoteEntryPage.xaml and NotePage.xaml uses implicit styles in the App.xaml resource dictionary, and also its own implicit style for each Target Type of its page 
 
 
 ### App.xaml 
