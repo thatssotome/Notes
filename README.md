@@ -56,3 +56,5 @@ Define the files in the app as _var note_ to the `(Note)BindingContext` of the D
 `OnSaveButtonClicked`  (event handler )–the   event handler is executed, the Note instance is saved to the Database, with its own IF/else statement from the `NoteDatabase` class in the **Data** folder
 
 <br>`OnDeleteButtonClicked` event handler delete the Note instance in the database, with its own IF/ELSE statement written in the `NoteDatabase` class in the **Data** folder 
+![multi](https://github.com/thatssotome/Notes/blob/Database/noteentrymulti.png) 
+![data](https://github.com/thatssotome/Notes/blob/Database/noteentrydata.png) 
