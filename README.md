@@ -44,7 +44,7 @@ _**If / return**_ statement
   `null` for an object property, 
 <br>pass the `get` data files through the `dbPath`, previously defined, into the database, and 
 <br>`return` the display the database as one single `new NoteDatabase` instance </br>
-
+![database](https://github.com/thatssotome/Notes/blob/Database/datamppcompare.PNG)
 ### NotesPage.xaml.cs 
 Make changes to the `async OnAppearing` method to populate the notes in the database 
 <br>Populates a `listView` of the `ItemSource` from the note in the Database 
