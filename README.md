@@ -19,7 +19,12 @@
 ### Note.cs in Models
 * Marked the `ID` of the Note class with `PrimaryKey` and `AutoIncrement` 
 * So that each Note instance in the SQLite database will have its _own unique id_
-	
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comparison: Multipage vs Database    
+ ------
+![notecscomparison](https://github.com/thatssotome/Notes/blob/database_compare/notecscomp.PNG)
+
+***	
 ### NoteDatabase.cs 
 * NoteDatabase`(string dbPath)` –string name `_database `with a connection to the SQLite database through the `dbPath` provided in _App.xaml_ 
 * `CreateTableAsync` –Creates a table of the Note instances and sync with SQLite 
@@ -44,10 +49,21 @@ _**If / return**_ statement
   `null` for an object property, 
 <br>pass the `get` data files through the `dbPath`, previously defined, into the database, and 
 <br>`return` the display the database as one single `new NoteDatabase` instance </br>
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comparison: Multipage vs Database    
+ ------
+![noteappcomparison](https://github.com/thatssotome/Notes/blob/database_compare/noteappcomp.PNG)
 
+***
 ### NotesPage.xaml.cs 
 Make changes to the `async OnAppearing` method to populate the notes in the database 
 <br>Populates a `listView` of the `ItemSource` from the note in the Database 
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comparison: Multipage vs Database    
+ ------
+   ![notespagecomparison](https://github.com/thatssotome/Notes/blob/database_compare/notespagecomp.PNG)
+
+***
 
 ### NoteEntryPage.xaml.cs 
 Define the files in the app as _var note_ to the `(Note)BindingContext` of the Database 
@@ -56,3 +72,9 @@ Define the files in the app as _var note_ to the `(Note)BindingContext` of the D
 `OnSaveButtonClicked`  (event handler )–the   event handler is executed, the Note instance is saved to the Database, with its own IF/else statement from the `NoteDatabase` class in the **Data** folder
 
 <br>`OnDeleteButtonClicked` event handler delete the Note instance in the database, with its own IF/ELSE statement written in the `NoteDatabase` class in the **Data** folder 
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comparison: Multipage vs Database    
+ ------
+![noteentrycomparison](https://github.com/thatssotome/Notes/blob/database_compare/noteentrycomp.PNG) 
+
+***
