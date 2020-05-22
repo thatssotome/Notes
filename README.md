@@ -22,7 +22,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comparison: Multipage vs Database    
  ------
-![notecscomparison](https://github.com/thatssotome/Notes/blob/database_compare/notecscomp.PNG)
+![notecscomparison](https://github.com/thatssotome/Notes/blob/Database/notecscomp.PNG)
 
 ***	
 ### NoteDatabase.cs 
