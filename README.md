@@ -52,7 +52,7 @@ _**If / return**_ statement
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comparison: Multipage vs Database    
  ------
-![noteappcomparison](https://github.com/thatssotome/Notes/blob/database_compare/noteappcomp.PNG)
+![noteappcomparison](https://github.com/thatssotome/Notes/blob/Database/noteappcomp.PNG)
 
 ***
 ### NotesPage.xaml.cs 
@@ -61,7 +61,7 @@ Make changes to the `async OnAppearing` method to populate the notes in the data
 
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comparison: Multipage vs Database    
  ------
-   ![notespagecomparison](https://github.com/thatssotome/Notes/blob/database_compare/notespagecomp.PNG)
+   ![notespagecomparison](https://github.com/thatssotome/Notes/blob/Database/notespagecomp.PNG)
 
 ***
 
@@ -75,6 +75,6 @@ Define the files in the app as _var note_ to the `(Note)BindingContext` of the D
 
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comparison: Multipage vs Database    
  ------
-![noteentrycomparison](https://github.com/thatssotome/Notes/blob/database_compare/noteentrycomp.PNG) 
+![noteentrycomparison](https://github.com/thatssotome/Notes/blob/Database/noteentrycomp.PNG) 
 
 ***
