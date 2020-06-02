@@ -10,7 +10,7 @@
 ![database](https://github.com/thatssotome/Notes/blob/Database/databasenoteentry.PNG)
 
 
-# 1. First is the SinglePage
+# 1. First is the [SinglePage ](https://github.com/thatssotome/Notes/blob/Singlepage/README.md)
 - [x] Add, edit, save, and delete entry within ONE page 
 - [x] Layouts and buttons functions 
 
