@@ -29,16 +29,22 @@
 - [x] Connect to a Database and API testing 
 - [x] Synchronize local application storage to Database storage
 - [x] Allow user to add, edit, save, and delete to database 
-# Database 
+
 ![database](https://github.com/thatssotome/Notes/blob/Database/database.PNG) ![database](https://github.com/thatssotome/Notes/blob/Database/databasenoteentry.PNG)
 
 
 ***
+# Comparison: Multipage vs Database 
 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comparison: Multipage vs Database    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Note.cs in Models: Multipage vs Database    
  ------
+ ![notecscomparison](https://github.com/thatssotome/Notes/blob/Database/notecscomp.PNG)
+ ### Note.cs in Models
+* Marked the `ID` of the Note class with `PrimaryKey` and `AutoIncrement` 
+* So that each Note instance in the SQLite database will have its _own unique id_
+
 ![notecscomparison](https://github.com/thatssotome/Notes/blob/Database/notecscomp.PNG)
+
 
 ***	
 ### NoteDatabase.cs 
