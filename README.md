@@ -33,11 +33,6 @@
 ![database](https://github.com/thatssotome/Notes/blob/Database/database.PNG) ![database](https://github.com/thatssotome/Notes/blob/Database/databasenoteentry.PNG)
 
 
-
-# 4. Finally Styling
-- [x] All the functions and layouts are done 
-- [x] Aesthetics and Customization
-
 ***
 
 
@@ -99,4 +94,9 @@ Define the files in the app as _var note_ to the `(Note)BindingContext` of the D
 ![noteentrycomparison](https://github.com/thatssotome/Notes/blob/Database/noteentrycomp.PNG) 
 
 ***
+# 4. Finally[Styling](https://github.com/thatssotome/Notes/tree/Styling)
+- [x] All the functions and layouts are done 
+- [x] Aesthetics and Customization
+- [x] Deployment testing 
+- [x] Cofirms that the tools works
 
