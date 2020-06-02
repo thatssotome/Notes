@@ -1,4 +1,12 @@
 
+# General Purpose of Making this App 
+- [x] Test the multi-platform software used to create mobile apps 
+- [x] Allow users to connect to the database  
+- [x] Allow users to add, edit, and delete items(notes) on the app and the database 
+- [x] Synchronizing with the local application and the database 
+- [x] Run Android Simulation to test Android deployment 
+- [x] Run iPhone simulation WITHOUT owning a MAC to test iOS deployment 
+
 # MultiPage App Note 
    ![multiple](https://github.com/thatssotome/Notes/blob/Multipage/mpp_note_entry.PNG)    ![multiple](https://github.com/thatssotome/Notes/blob/Multipage/mpp_note.PNG) 
 * 	Created Multiple pages: NoteEntry Page and a Notes Page 
