@@ -8,7 +8,7 @@
 * 	Store all the data on the local app
 * 	Database and local storage within the App
 * 	Allow user to add, delete, edit, and make changes to the app 
-### Note.cs [Note.cs](https://github.com/thatssotome/Notes/blob/Multipage/Notes/Models/Note.cs)
+### [Note.cs](https://github.com/thatssotome/Notes/blob/Multipage/Notes/Models/Note.cs)
 A **Note** _class_ that sets and stores all the data in the app, such as date, time, and filename 
 
 ## Note Entry Page 
