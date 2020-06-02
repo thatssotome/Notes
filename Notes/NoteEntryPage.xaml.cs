@@ -14,28 +14,17 @@ namespace Notes
         }
         async void OnSaveButtonClicked(object sender, EventArgs e) //function of the Save button event handler of the NoteEntry Page 
         {
-            var note = (Note)BindingContext;
-            if (string.IsNullOrWhiteSpace(note.Filename))
-            {
-                //save to a randomly generated filename(GETRANDOMFILE)
-                var filename = Path.Combine(App.FolderPath, $"{Path.GetRandomFileName()}.notes.txt"); //combine string array for filepath 
-                File.WriteAllText(filename, note.Text);
-            }
-            else
-            {
-                //update
-                File.WriteAllText(note.Filename, note.Text);
-            }
+            var note = (Note)BindingContext; //Define the var note files in the app to the (Note)BindingContext of the Database 
+            note.Date = DateTime.UtcNow; //Define the Date of the note files in the app to the DateTime in the Database 
+            await App.Database.SaveNoteAsync(note); //previous IF/ELSE statement, now correlates to the IF/ELSE statement in the NoteDatabase class in Data folder
             await Navigation.PopAsync(); //method naviagates back to the previous page 
         }
         async void OnDeleteButtonClicked(object sender, EventArgs e)
         {
             var note = (Note)BindingContext;
-            if (File.Exists(note.Filename))
-            {
-                File.Delete(note.Filename);
-            }
+            await App.Database.DeleteNoteAsync(note); //delete notes in app and database and sync 
             await Navigation.PopAsync();
+           
         }
     } //close public partial class 
 }

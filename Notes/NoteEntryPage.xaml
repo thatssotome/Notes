@@ -4,8 +4,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Notes.NoteEntryPage"
              Title="Note Entry">
-    <StackLayout Margin="20">
-        <Editor Placeholder="Entry your note"
+  <!--Implicit Style Resource dictionary for the page NoteEnry.xaml-->  
+    <ContentPage.Resources> 
+        <Style TargetType="{x:Type Editor}">
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource AppBackgroundColor}"/>
+        </Style> <!--set the value of the BackgroundColor property to AppBackgroundColor in App.xaml Alice Blue-->
+
+        <Style TargetType="Button"
+               ApplyToDerivedTypes="True"
+               CanCascade="True">
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="BackgroundColor" Value="#1976D2"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="CornerRadius" Value="5"/>
+        </Style> <!---Define the value for the FontSize, BackgroundColor, TextColor, CornerRadius for the button-->
+    </ContentPage.Resources>
+    
+    <StackLayout Margin="{StaticResource PageMargin}">
+        <Editor Placeholder="Enter your note"
                 Text="{Binding Text}"
                 HeightRequest="100"/> <!--data binding of the Text property of the Notes Model-->
         <Grid>
