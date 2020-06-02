@@ -4,14 +4,14 @@
 * Save Button Save the Notes 
 * Delete Button clears the note 
 
-## MainPage.xaml
+## [MainPage.xaml](https://github.com/thatssotome/Notes/blob/Singlepage/Notes/MainPage.xaml)
 Layout of the User Interface 
 * 	Label –to display the text 
 * 	Grid –where to map out the text 
 * 	Editor –the text input, for user to input the text 
 * 	Button –2 buttons: Save and Delete 
 
-## MainPage.xaml.cs 
+## [MainPage.xaml.cs](https://github.com/thatssotome/Notes/blob/Singlepage/Notes/MainPage.xaml.cs)
 The function of the User Interface 
 * Creates a string for **_fileName** = the file Path 
 * Initialize opening the file IF the file Exists 
