@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    <!-- The Second page of the application-->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notes.NoteEntryPage"
+             Title="Note Entry">
+  <!--Implicit Style Resource dictionary for the page NoteEnry.xaml-->  
+    <ContentPage.Resources> 
+        <Style TargetType="{x:Type Editor}">
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource AppBackgroundColor}"/>
+        </Style> <!--set the value of the BackgroundColor property to AppBackgroundColor in App.xaml Alice Blue-->
+
+        <Style TargetType="Button"
+               ApplyToDerivedTypes="True"
+               CanCascade="True">
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="BackgroundColor" Value="#1976D2"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="CornerRadius" Value="5"/>
+        </Style> <!---Define the value for the FontSize, BackgroundColor, TextColor, CornerRadius for the button-->
+    </ContentPage.Resources>
+    
+    <StackLayout Margin="{StaticResource PageMargin}">
+        <Editor Placeholder="Enter your note"
+                Text="{Binding Text}"
+                HeightRequest="100"/> <!--data binding of the Text property of the Notes Model-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+    <!--2Buttons: Save and Delete-->
+            <Button Text="Save"
+                    Clicked="OnSaveButtonClicked"/> <!--Event handler for the buttons-->
+            <Button Grid.Column="1"
+                    Text="Delete"
+                    Clicked="OnDeleteButtonClicked"/>
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>

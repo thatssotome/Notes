@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notes.NotesPage"
+             Title="Notes">
+    <!--User Interface of the page, also the root page-->
+   
+   <!--Implicit styles to the ListView for this PAGE-LEVEL Resource Dictionary--> 
+    <ContentPage.Resources>
+        <Style TargetType="{x:Type ListView}">
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource AppBackgroundColor}"/>
+        </Style> 
+    </ContentPage.Resources>
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+"
+                     Clicked="OnNoteAddedClicked"/> <!--event handler OnNoteAddedClick-->
+    </ContentPage.ToolbarItems>
+    
+  <!--Sets the ListView.Margin values that was defined in the App.xaml resource dictionary throughout the app-->  
+    <ListView x:Name="listView"
+              Margin="{StaticResource PageMargin}"
+              ItemSelected="OnListViewItemSelected"><!--event handler that when the item is selected will navigate to the NoteEntryPage of that item-->
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Text}"
+                          TextColor="Black"
+                          Detail="{Binding Date}"/>
+            </DataTemplate>
+        </ListView.ItemTemplate><!--display list view of data of notes like the input text and date through data binding-->
+    </ListView>
+</ContentPage>
