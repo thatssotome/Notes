@@ -16,8 +16,9 @@ namespace Notes
                 if(database == null)
                 {
                     database = new NoteDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Notes.db3"));
-                } //folder path of the local application folder to the database
-                return database; 
+                } //get the datafiles from local app 
+                //passes the data files on the local app through the dbfolder path into the database 
+                return database; //return as one single NoteDatabase instances 
             }
         }
         public App()
