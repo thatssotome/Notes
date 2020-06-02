@@ -16,7 +16,13 @@
 
 ![single](https://github.com/thatssotome/Notes/blob/master/single_entry.PNG) 
 
-# MultiPage App Note 
+# 2. Turning the SinglePage to a [MultiPage](https://github.com/thatssotome/Notes/blob/Multipage/README.md)
+- [x] Addition to the functions of SinglePage
+- [x] Created Multiple pages: NoteEntry Page and a Notes Page 
+- [x] Use “async”, to sync and link multiple pages together  and navigation within 
+- [x] Database and local storage within the App
+- [x] Allow user to add, edit, save 
+
    ![multiple](https://github.com/thatssotome/Notes/blob/Multipage/mpp_note_entry.PNG)    ![multiple](https://github.com/thatssotome/Notes/blob/Multipage/mpp_note.PNG) 
 * 	Created Multiple pages: NoteEntry Page and a Notes Page 
 * 	Use “async”, to sync and link multiple pages together  and navigation within 
