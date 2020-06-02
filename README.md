@@ -1,4 +1,3 @@
-
 # General Purpose of Making this App 
 - [x] Test the multi-platform software used to create mobile apps 
 - [x] Allow users to connect to the database  
@@ -6,6 +5,16 @@
 - [x] Synchronizing with the local application and the database 
 - [x] Run Android Simulation to test Android deployment 
 - [x] Run iPhone simulation WITHOUT owning a MAC to test iOS deployment 
+
+![final](https://github.com/thatssotome/Notes/blob/master/finalnote.JPG)
+![database](https://github.com/thatssotome/Notes/blob/Database/databasenoteentry.PNG)
+
+
+# 1. First is the SinglePage
+- [x] Add, edit, save, and delete entry within ONE page 
+- [x] Layouts and buttons functions 
+
+![single](https://github.com/thatssotome/Notes/blob/master/single_entry.PNG) 
 
 # MultiPage App Note 
    ![multiple](https://github.com/thatssotome/Notes/blob/Multipage/mpp_note_entry.PNG)    ![multiple](https://github.com/thatssotome/Notes/blob/Multipage/mpp_note.PNG) 
